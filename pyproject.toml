@@ -5,15 +5,15 @@ description = "Template for an atomforge model plugin: a Lennard-Jones potential
 readme = "README.md"
 requires-python = ">=3.12"
 # Host-side dependencies only. The model's own dependencies (here torch) are NOT
-# listed here. They belong in the environment factory (torch_lj/environment.py) and
-# are installed only in the isolated worker environment.
+# listed here. They belong in the environment factory (environment.py) and are
+# installed only in the isolated worker environment.
 dependencies = [
     "atomforge-core>=0.1.0a1",
 ]
 
 # One entry point per model. The target must be a ModelManifest.
 [project.entry-points.'atomforge.model']
-torch_lj = "atomforge_template.torch_lj.manifest:torch_lj_manifest"
+torch_lj = "atomforge_template.manifest:torch_lj_manifest"
 
 [dependency-groups]
 dev = [
@@ -36,11 +36,11 @@ markers = [
 filterwarnings = ["error::DeprecationWarning"]
 
 # Where atomforge comes from.
-# Pinned to atomforge commit 21c68951aec7, which this template was exported
+# Pinned to atomforge commit 37af1a3005af, which this template was exported
 # from. Move all of them together to a newer commit to update atomforge.
 [tool.uv.sources]
-atomforge = { git = "https://github.com/atomfg/atomforge", rev = "21c68951aec70b7677d562e896922585b48d22bf" }
-atomforge_core = { git = "https://github.com/atomfg/atomforge", rev = "21c68951aec70b7677d562e896922585b48d22bf", subdirectory = "packages/atomforge-core" }
-atomforge_runtime = { git = "https://github.com/atomfg/atomforge", rev = "21c68951aec70b7677d562e896922585b48d22bf", subdirectory = "packages/atomforge-runtime" }
-atomforge_builtins = { git = "https://github.com/atomfg/atomforge", rev = "21c68951aec70b7677d562e896922585b48d22bf", subdirectory = "packages/atomforge-builtins" }
-atomforge_testing = { git = "https://github.com/atomfg/atomforge", rev = "21c68951aec70b7677d562e896922585b48d22bf", subdirectory = "packages/atomforge-testing" }
+atomforge = { git = "https://github.com/atomfg/atomforge", rev = "37af1a3005afa431c1dc4588d6e2674fb4a036ef" }
+atomforge_core = { git = "https://github.com/atomfg/atomforge", rev = "37af1a3005afa431c1dc4588d6e2674fb4a036ef", subdirectory = "packages/atomforge-core" }
+atomforge_runtime = { git = "https://github.com/atomfg/atomforge", rev = "37af1a3005afa431c1dc4588d6e2674fb4a036ef", subdirectory = "packages/atomforge-runtime" }
+atomforge_builtins = { git = "https://github.com/atomfg/atomforge", rev = "37af1a3005afa431c1dc4588d6e2674fb4a036ef", subdirectory = "packages/atomforge-builtins" }
+atomforge_testing = { git = "https://github.com/atomfg/atomforge", rev = "37af1a3005afa431c1dc4588d6e2674fb4a036ef", subdirectory = "packages/atomforge-testing" }
