@@ -27,20 +27,16 @@ build-backend = "uv_build"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-markers = [
-    "atomforge_environment: opt-in AtomForge environment resolver contracts",
-    "atomforge_runtime: opt-in AtomForge runtime execution contracts",
-]
 # Fail on deprecation warnings, so that use of a deprecated atomforge API shows up
 # while the old API still works. Relax this if a third-party dependency warns.
 filterwarnings = ["error::DeprecationWarning"]
 
 # Where atomforge comes from.
-# Pinned to atomforge commit 37af1a3005af, which this template was exported
+# Pinned to atomforge commit a98b99438ea2, which this template was exported
 # from. Move all of them together to a newer commit to update atomforge.
 [tool.uv.sources]
-atomforge = { git = "https://github.com/atomfg/atomforge", rev = "37af1a3005afa431c1dc4588d6e2674fb4a036ef" }
-atomforge_core = { git = "https://github.com/atomfg/atomforge", rev = "37af1a3005afa431c1dc4588d6e2674fb4a036ef", subdirectory = "packages/atomforge-core" }
-atomforge_runtime = { git = "https://github.com/atomfg/atomforge", rev = "37af1a3005afa431c1dc4588d6e2674fb4a036ef", subdirectory = "packages/atomforge-runtime" }
-atomforge_builtins = { git = "https://github.com/atomfg/atomforge", rev = "37af1a3005afa431c1dc4588d6e2674fb4a036ef", subdirectory = "packages/atomforge-builtins" }
-atomforge_testing = { git = "https://github.com/atomfg/atomforge", rev = "37af1a3005afa431c1dc4588d6e2674fb4a036ef", subdirectory = "packages/atomforge-testing" }
+atomforge = { git = "https://github.com/atomfg/atomforge", rev = "a98b99438ea239f4ef9b611435dfd3d75cc9620a" }
+atomforge_core = { git = "https://github.com/atomfg/atomforge", rev = "a98b99438ea239f4ef9b611435dfd3d75cc9620a", subdirectory = "packages/atomforge-core" }
+atomforge_runtime = { git = "https://github.com/atomfg/atomforge", rev = "a98b99438ea239f4ef9b611435dfd3d75cc9620a", subdirectory = "packages/atomforge-runtime" }
+atomforge_builtins = { git = "https://github.com/atomfg/atomforge", rev = "a98b99438ea239f4ef9b611435dfd3d75cc9620a", subdirectory = "packages/atomforge-builtins" }
+atomforge_testing = { git = "https://github.com/atomfg/atomforge", rev = "a98b99438ea239f4ef9b611435dfd3d75cc9620a", subdirectory = "packages/atomforge-testing" }
