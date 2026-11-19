@@ -17,7 +17,7 @@ torch_lj = "atomforge_template.manifest:torch_lj_manifest"
 
 [dependency-groups]
 dev = [
-    "atomforge-testing[runtime]>=0.1.0a1",
+    "atomforge-testing[runtime,regression]>=0.1.0a1",
     "pytest>=9.0.3",
 ]
 
@@ -32,11 +32,11 @@ testpaths = ["tests"]
 filterwarnings = ["error::DeprecationWarning"]
 
 # Where atomforge comes from.
-# Pinned to atomforge commit be676eddf266, which this template was exported
+# Pinned to atomforge commit dc5b87bf4a03, which this template was exported
 # from. Move all of them together to a newer commit to update atomforge.
 [tool.uv.sources]
-atomforge = { git = "https://github.com/atomfg/atomforge", rev = "be676eddf2664ae2a204467e86872d9c4d7d60fc" }
-atomforge_core = { git = "https://github.com/atomfg/atomforge", rev = "be676eddf2664ae2a204467e86872d9c4d7d60fc", subdirectory = "packages/atomforge-core" }
-atomforge_runtime = { git = "https://github.com/atomfg/atomforge", rev = "be676eddf2664ae2a204467e86872d9c4d7d60fc", subdirectory = "packages/atomforge-runtime" }
-atomforge_builtins = { git = "https://github.com/atomfg/atomforge", rev = "be676eddf2664ae2a204467e86872d9c4d7d60fc", subdirectory = "packages/atomforge-builtins" }
-atomforge_testing = { git = "https://github.com/atomfg/atomforge", rev = "be676eddf2664ae2a204467e86872d9c4d7d60fc", subdirectory = "packages/atomforge-testing" }
+atomforge = { git = "https://github.com/atomfg/atomforge", rev = "dc5b87bf4a03613b3f867aaa33461cae25a0d2d3" }
+atomforge_core = { git = "https://github.com/atomfg/atomforge", rev = "dc5b87bf4a03613b3f867aaa33461cae25a0d2d3", subdirectory = "packages/atomforge-core" }
+atomforge_runtime = { git = "https://github.com/atomfg/atomforge", rev = "dc5b87bf4a03613b3f867aaa33461cae25a0d2d3", subdirectory = "packages/atomforge-runtime" }
+atomforge_builtins = { git = "https://github.com/atomfg/atomforge", rev = "dc5b87bf4a03613b3f867aaa33461cae25a0d2d3", subdirectory = "packages/atomforge-builtins" }
+atomforge_testing = { git = "https://github.com/atomfg/atomforge", rev = "dc5b87bf4a03613b3f867aaa33461cae25a0d2d3", subdirectory = "packages/atomforge-testing" }
