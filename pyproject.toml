@@ -32,11 +32,11 @@ testpaths = ["tests"]
 filterwarnings = ["error::DeprecationWarning"]
 
 # Where atomforge comes from.
-# Pinned to atomforge commit 63d7453b78ed, which this template was exported
+# Pinned to atomforge commit 71d15f41273e, which this template was exported
 # from. Move all of them together to a newer commit to update atomforge.
 [tool.uv.sources]
-atomforge = { git = "https://github.com/atomfg/atomforge", rev = "63d7453b78ed16b4c298c38ce2324dd60fcdd961" }
-atomforge_core = { git = "https://github.com/atomfg/atomforge", rev = "63d7453b78ed16b4c298c38ce2324dd60fcdd961", subdirectory = "packages/atomforge-core" }
-atomforge_runtime = { git = "https://github.com/atomfg/atomforge", rev = "63d7453b78ed16b4c298c38ce2324dd60fcdd961", subdirectory = "packages/atomforge-runtime" }
-atomforge_builtins = { git = "https://github.com/atomfg/atomforge", rev = "63d7453b78ed16b4c298c38ce2324dd60fcdd961", subdirectory = "packages/atomforge-builtins" }
-atomforge_testing = { git = "https://github.com/atomfg/atomforge", rev = "63d7453b78ed16b4c298c38ce2324dd60fcdd961", subdirectory = "packages/atomforge-testing" }
+atomforge = { git = "https://github.com/atomfg/atomforge", rev = "71d15f41273ee6df8639f55df3d480ea2b7afa44" }
+atomforge_core = { git = "https://github.com/atomfg/atomforge", rev = "71d15f41273ee6df8639f55df3d480ea2b7afa44", subdirectory = "packages/atomforge-core" }
+atomforge_runtime = { git = "https://github.com/atomfg/atomforge", rev = "71d15f41273ee6df8639f55df3d480ea2b7afa44", subdirectory = "packages/atomforge-runtime" }
+atomforge_builtins = { git = "https://github.com/atomfg/atomforge", rev = "71d15f41273ee6df8639f55df3d480ea2b7afa44", subdirectory = "packages/atomforge-builtins" }
+atomforge_testing = { git = "https://github.com/atomfg/atomforge", rev = "71d15f41273ee6df8639f55df3d480ea2b7afa44", subdirectory = "packages/atomforge-testing" }
