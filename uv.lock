@@ -14,7 +14,7 @@ wheels = [
 [[package]]
 name = "atomforge"
 version = "0.1.0a1"
-source = { git = "https://github.com/atomfg/atomforge?rev=8f2b928b5ef4b8524e4aa876ad1e6b3ff198db23#8f2b928b5ef4b8524e4aa876ad1e6b3ff198db23" }
+source = { git = "https://github.com/atomfg/atomforge?rev=5102cc4ef5c07af4e44a722801de5f08e2b6f034#5102cc4ef5c07af4e44a722801de5f08e2b6f034" }
 dependencies = [
     { name = "atomforge-builtins" },
     { name = "atomforge-core" },
@@ -29,7 +29,7 @@ dependencies = [
 [[package]]
 name = "atomforge-builtins"
 version = "0.1.0a1"
-source = { git = "https://github.com/atomfg/atomforge?subdirectory=packages%2Fatomforge-builtins&rev=8f2b928b5ef4b8524e4aa876ad1e6b3ff198db23#8f2b928b5ef4b8524e4aa876ad1e6b3ff198db23" }
+source = { git = "https://github.com/atomfg/atomforge?subdirectory=packages%2Fatomforge-builtins&rev=5102cc4ef5c07af4e44a722801de5f08e2b6f034#5102cc4ef5c07af4e44a722801de5f08e2b6f034" }
 dependencies = [
     { name = "atomforge-core" },
 ]
@@ -37,7 +37,7 @@ dependencies = [
 [[package]]
 name = "atomforge-core"
 version = "0.1.0a1"
-source = { git = "https://github.com/atomfg/atomforge?subdirectory=packages%2Fatomforge-core&rev=8f2b928b5ef4b8524e4aa876ad1e6b3ff198db23#8f2b928b5ef4b8524e4aa876ad1e6b3ff198db23" }
+source = { git = "https://github.com/atomfg/atomforge?subdirectory=packages%2Fatomforge-core&rev=5102cc4ef5c07af4e44a722801de5f08e2b6f034#5102cc4ef5c07af4e44a722801de5f08e2b6f034" }
 dependencies = [
     { name = "packaging" },
     { name = "pydantic" },
@@ -46,7 +46,7 @@ dependencies = [
 [[package]]
 name = "atomforge-runtime"
 version = "0.1.0a1"
-source = { git = "https://github.com/atomfg/atomforge?subdirectory=packages%2Fatomforge-runtime&rev=8f2b928b5ef4b8524e4aa876ad1e6b3ff198db23#8f2b928b5ef4b8524e4aa876ad1e6b3ff198db23" }
+source = { git = "https://github.com/atomfg/atomforge?subdirectory=packages%2Fatomforge-runtime&rev=5102cc4ef5c07af4e44a722801de5f08e2b6f034#5102cc4ef5c07af4e44a722801de5f08e2b6f034" }
 dependencies = [
     { name = "atomforge-core" },
     { name = "pydantic" },
@@ -67,18 +67,18 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "atomforge-core", git = "https://github.com/atomfg/atomforge?subdirectory=packages%2Fatomforge-core&rev=8f2b928b5ef4b8524e4aa876ad1e6b3ff198db23" }]
+requires-dist = [{ name = "atomforge-core", git = "https://github.com/atomfg/atomforge?subdirectory=packages%2Fatomforge-core&rev=5102cc4ef5c07af4e44a722801de5f08e2b6f034" }]
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "atomforge-testing", extras = ["runtime", "regression"], git = "https://github.com/atomfg/atomforge?subdirectory=packages%2Fatomforge-testing&rev=8f2b928b5ef4b8524e4aa876ad1e6b3ff198db23" },
+    { name = "atomforge-testing", extras = ["runtime", "regression"], git = "https://github.com/atomfg/atomforge?subdirectory=packages%2Fatomforge-testing&rev=5102cc4ef5c07af4e44a722801de5f08e2b6f034" },
     { name = "pytest", specifier = ">=9.0.3" },
 ]
 
 [[package]]
 name = "atomforge-testing"
 version = "0.1.0a1"
-source = { git = "https://github.com/atomfg/atomforge?subdirectory=packages%2Fatomforge-testing&rev=8f2b928b5ef4b8524e4aa876ad1e6b3ff198db23#8f2b928b5ef4b8524e4aa876ad1e6b3ff198db23" }
+source = { git = "https://github.com/atomfg/atomforge?subdirectory=packages%2Fatomforge-testing&rev=5102cc4ef5c07af4e44a722801de5f08e2b6f034#5102cc4ef5c07af4e44a722801de5f08e2b6f034" }
 dependencies = [
     { name = "atomforge-core" },
     { name = "atomforge-runtime" },
